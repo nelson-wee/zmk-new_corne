@@ -30,8 +30,8 @@ layers:
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
+  - {t: Z, h: UNDO}
+  - {t: X, h: CUT}
   - {t: C, h: COPY}
   - {t: V, h: PASTE}
   - B
