@@ -59,6 +59,24 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
+
+        mod_copy: mod_copy {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_COPY";
+            bindings = <&kp C>, <&kp C>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mod_paste: mod_paste {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_PASTE";
+            bindings = <&kp V>, <&kp V>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -81,10 +99,10 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-&kp ESC     &kp Q          &kp W         &kp E          &kp R           &kp T                                &kp UP                &kp Y        &kp U         &kp I      &kp O        &kp P            &kp BSPC
-&td0        &hml LCTRL A   &hml LALT S   &hml LGUI D    &hml LSHFT F    &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J  &hmr K K   &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
-&kp LSHIFT  &hml K_UNDO Z  &hml K_CUT X  &hml K_COPY C  &hml K_PASTE V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M         &kp COMMA  &kp DOT      &kp FSLH         &kp ENTER
-                                         &kp LGUI       &mo 2           &lt 3 SPACE                                                &lt 3 SPACE  &mo 1         &kp DEL
+&kp ESC     &kp Q          &kp W         &kp E        &kp R         &kp T                                &kp UP                &kp Y        &kp U         &kp I      &kp O        &kp P            &kp BSPC
+&td0        &hml LCTRL A   &hml LALT S   &hml LGUI D  &hml LSHFT F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J  &hmr K K   &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
+&kp LSHIFT  &hml K_UNDO Z  &hml K_CUT X  &mod_copy    &mod_paste    &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M         &kp COMMA  &kp DOT      &kp FSLH         &kp ENTER
+                                         &kp LGUI     &mo 2         &lt 3 SPACE                                                &lt 3 SPACE  &mo 1         &kp DEL
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
