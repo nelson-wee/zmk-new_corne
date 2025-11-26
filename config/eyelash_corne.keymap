@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-macro";
             label = "COPY_MACRO";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp C>;
+            bindings = <&kp LC(C)>;
         };
 
         paste_hold: mod_paste {
@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-macro";
             label = "PASTE_MACRO";
             #binding-cells = <0>;
-            bindings = <&kp LC(V) &kp V>;
+            bindings = <&kp LC(V)>;
         };
     };
 
