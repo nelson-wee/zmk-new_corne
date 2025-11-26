@@ -86,7 +86,7 @@
             bindings = <
 &kp ESC     &kp Q          &kp W         &kp E        &kp R         &kp T                                &kp UP                &kp Y        &kp U         &kp I      &kp O        &kp P            &kp BSPC
 &td0        &hml LCTRL A   &hml LALT S   &hml LGUI D  &hml LSHFT F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J  &hmr K K   &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
-&kp LSHIFT  &hml K_UNDO Z  &hml K_CUT X  &macro_copy  &macro_paste  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M         &kp COMMA  &kp DOT      &kp FSLH         &kp ENTER
+&kp LSHIFT  &hml K_UNDO Z  &hml K_CUT X  &kp C        &mkp V        &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M         &kp COMMA  &kp DOT      &kp FSLH         &kp ENTER
                                          &kp LGUI     &mo 2         &lt 3 SPACE                                                &lt 3 SPACE  &mo 1         &kp DEL
             >;
 
