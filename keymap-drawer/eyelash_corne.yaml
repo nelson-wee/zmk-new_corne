@@ -32,8 +32,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: Z, h: UNDO}
   - {t: X, h: CUT}
-  - '&mod_copy'
-  - '&mod_paste'
+  - '&macro_copy'
+  - '&macro_paste'
   - B
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
