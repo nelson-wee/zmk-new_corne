@@ -32,8 +32,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
-  - C
-  - V
+  - {t: C, h: COPY}
+  - {t: V, h: PASTE}
   - B
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
