@@ -60,7 +60,7 @@
             hold-trigger-on-release;
         };
 
-        copy_hold: mod_morph {
+        copy_hold: mod_copy {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             hold-trigger-key-positions = <27>; // adjust to actual key position of 'C' in your layout
@@ -74,7 +74,7 @@
             bindings = <&left_control &kp C>;
         };
 
-        copy_hold: mod_morph {
+        paste_hold: mod_paste {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             hold-trigger-key-positions = <28>; // adjust to actual key position of 'C' in your layout
