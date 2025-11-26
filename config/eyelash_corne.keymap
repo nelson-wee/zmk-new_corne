@@ -60,22 +60,32 @@
             hold-trigger-on-release;
         };
 
-        mod_copy: mod_copy {
+        copy_hold: mod_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_COPY";
-            bindings = <&kp C>, <&kp C>;
-
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            hold-trigger-key-positions = <27>; // adjust to actual key position of 'C' in your layout
+            bindings = <&kp C &macro_copy>;
         };
 
-        mod_paste: mod_paste {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOD_PASTE";
-            bindings = <&kp V>, <&kp V>;
-
+        macro_copy: macro {
+            compatible = "zmk,behavior-macro";
+            label = "COPY_MACRO";
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            bindings = <&left_control &kp C>;
+        };
+
+        copy_hold: mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            hold-trigger-key-positions = <28>; // adjust to actual key position of 'C' in your layout
+            bindings = <&kp C &macro_paste>;
+        };
+
+        macro_paste: macro {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE_MACRO";
+            #binding-cells = <0>;
+            bindings = <&left_control &kp V>;
         };
     };
 
